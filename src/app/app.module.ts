@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule} from '@angular/material/card';
-//import { HomePageComponent } from './home-page/home-page.component';
+import { LengthComponent } from './Components/length/length.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    LengthComponent
   ],
   imports: [
     BrowserModule,
