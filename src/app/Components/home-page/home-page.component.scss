@@ -1,0 +1,47 @@
+.header
+{
+    margin-left:5%;
+    text-align: left;
+   font:normal normal 600 16px/18px Poppins;
+ letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+margin-top:2%;
+display: flex;
+justify-content: space-between;
+padding-right:2%;
+padding-left:2%;
+padding-bottom:0.5%;
+}
+.quantum
+{
+    font-width:600;
+    font-size:25px;
+    margin-left:10%;
+}
+.history
+{
+    font-size:12px;
+    margin-right:10%;
+}
+.header1
+{
+background-color: #446DFF;
+// padding-left:400px;
+font: normal normal normal 25px/30px Montserrat;
+width:100%;
+color: #FFFFFF;
+height:20%;
+
+}
+.para
+{
+    padding-top:1.5%;
+    padding-bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+}
+.mainDiv
+{
+    overflow: hidden;
+}
