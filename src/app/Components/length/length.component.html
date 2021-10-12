@@ -1,48 +1,83 @@
 
 <div class="main">
-<div class="text">
-    CHOOSE TYPE
-  </div>
-
-<div class="mainCard">
-  <div class="cardDiv">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <img mat-card-image src="../../../assets/scale.png" alt="length" style="width: 12%;
-      margin: 0px -1px; margin-left:8px">
-    </mat-card-header>
-    <p class="length">
-      Length
-    </p>
-  </mat-card>
-</div>
-
-<div class="cardDiv">
-    <mat-card class="example-card">
-      <mat-card-header>
-        <img mat-card-image src="../../../assets/hot.png" alt="length" style="width: 25%;
-      margin: 0px -1px; margin-left:10px">
-      </mat-card-header>
-      <p class="temp">
- Temperature
-      </p>
-    </mat-card>
-  </div>
-  <div class="cardDiv">
-    <mat-card class="example-card">
-      <mat-card-header>
-        <img mat-card-image src="../../../assets/beaker.png" alt="length" style="width: 40%;
-      margin: 0px -1px; margin-left:5px">
-      </mat-card-header>
-      <p class="volume">
-       Volume
-      </p>
-    </mat-card>
-  </div>
-</div>
-
-  </div>
-  
-  
-  
- 
+    <div class="text">
+        CHOOSE TYPE
+      </div>
+    
+    <div class="mainCard">
+      <div class="cardDiv">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <img mat-card-image src="../../../assets/scale.png" alt="length" style="width: 12%;
+          margin: 0px -1px; margin-left:8px">
+        </mat-card-header>
+        <p class="length">
+          Length
+        </p>
+      </mat-card>
+    </div>
+    
+    <div class="cardDiv">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <img mat-card-image src="../../../assets/hot.png" alt="length" style="width: 25%;
+          margin: 0px -1px; margin-left:10px">
+          </mat-card-header>
+          <p class="temp">
+     Temperature
+          </p>
+        </mat-card>
+      </div>
+      <div class="cardDiv">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <img mat-card-image src="../../../assets/beaker.png" alt="length" style="width: 40%;
+          margin: 0px -1px; margin-left:5px">
+          </mat-card-header>
+          <p class="volume">
+           Volume
+          </p>
+        </mat-card>
+      </div>
+    </div>
+      <div class="main-convert">
+        <div class="sub-convert">
+            <p class="sub-convert-text">FROM</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="1" style="font-weight:900;padding-left:10px">
+                <hr>
+            <!-- </mat-form-field>
+            <mat-form-field appearance="fill"> -->
+                <mat-select [(value)]="from" >
+                    <mat-option value="Kilometer">Kilometer</mat-option>
+                    <mat-option value="Meter">Meters</mat-option>
+                    <mat-option value="Centimeter">Centimeters</mat-option>
+                    <mat-option value="Milimeter">Milimeter</mat-option>
+                    <mat-option value="Micrometer">Micrometer</mat-option>
+                    <mat-option value="Mile">Mile</mat-option>
+                    <mat-option value="Foot">Foot</mat-option>
+                    <mat-option value="Inch">Inch</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="sub-convert">
+            <p class="sub-convert-text">TO</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="100" style="font-weight:900;padding-left:10px">
+            <!-- <mat-form-field appearance="fill"> -->
+                <hr>
+                <mat-select [(value)]="to">
+                    <mat-option value="Kilometer">Kilometer</mat-option>
+                    <mat-option value="Meter">Meters</mat-option>
+                    <mat-option value="Centimeter">Centimeters</mat-option>
+                    <mat-option value="Milimeter">Milimeter</mat-option>
+                    <mat-option value="Micrometer">Micrometer</mat-option>
+                    <mat-option value="Mile">Mile</mat-option>
+                    <mat-option value="Foot">Foot</mat-option>
+                    <mat-option value="Inch">Inch</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    
+      </div>

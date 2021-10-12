@@ -11,5 +11,8 @@ export class LengthComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  from:string="Meter";
+  to="Centimeter";
+  fromtext=1;
+  state="length";
 }
