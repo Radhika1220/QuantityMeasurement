@@ -1,0 +1,124 @@
+
+<div>
+
+    <div>
+      <app-home-page></app-home-page>
+    </div>
+
+<div class="main">
+    <div class="text">
+        CHOOSE TYPE
+      </div>
+      <div class="mainCard">
+        <div class="cardDiv">
+    
+        <mat-card class="example-card" *ngIf="!expand"  (mouseover)="expand=true" style="color:#0EC098">
+          <mat-card-header >
+            <img mat-card-image src="../../../assets/scale-1.png" alt="length" style="width: 12%;
+            margin: 0px -1px; margin-left:8px">
+          </mat-card-header>
+          <p class="length">
+            Length
+          </p>
+        </mat-card>
+    
+        <mat-card class="example-card1" *ngIf="expand"  (mouseleave)="expand=false" style="color:white" (click)="OnLength()">
+          <mat-card-header >
+            <img mat-card-image src="../../../assets/scale@2x.png" alt="length" style="width: 12%;
+            margin: 0px -1px; margin-left:8px">
+          </mat-card-header>
+          <p class="length1">
+            Length
+          </p>
+        </mat-card>
+    
+      </div>
+
+
+    
+    <div class="cardDiv">
+        <mat-card class="example-card2" *ngIf="!expand1"  (mouseover)="expand1=true" style="color:#FD5160">
+          <mat-card-header>
+            <img mat-card-image src="../../../assets/hot.png" alt="length" style="width: 25%;
+          margin: 0px -1px; margin-left:5px">
+          </mat-card-header>
+          <p class="temp">
+     Temperature
+          </p>
+        </mat-card>
+
+        <mat-card class="example-card3" *ngIf="expand1"  (mouseleave)="expand1=false" style="color:white" (click)="OnTemp()">
+          <mat-card-header >
+            <img mat-card-image src="../../../assets/hot@2x.png" alt="length" style="width: 25%;
+          margin: 0px -1px; margin-left:5px">
+          </mat-card-header>
+          <p class="temp1">
+     Temperature
+          </p>
+        </mat-card>
+    </div>
+
+    <div class="cardDiv">
+    
+
+      <mat-card class="example-card4">
+        <mat-card-header >
+          <img mat-card-image src="../../../assets/beaker.png" alt="length" style="width: 40%;
+        margin: 0px -1px; margin-left:3px">
+        </mat-card-header>
+        <p class="volume">
+         Volume
+        </p>
+      </mat-card>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+      <div class="main-convert">
+        <div class="sub-convert">
+            <p class="sub-convert-text">FROM</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="1" style="font-weight:900;padding-left:10px">
+                <hr>
+            <!-- </mat-form-field>
+            <mat-form-field appearance="fill"> -->
+                <mat-select [(value)]="from" >
+                    <mat-option value="Litres">Litres</mat-option>
+                    <mat-option value="Millilitres">Millilitres</mat-option>
+                    <mat-option value="Gallons">Gallons</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="sub-convert">
+            <p class="sub-convert-text">TO</p>
+            <mat-form-field appearance="fill">
+                <input matInput value="1000" style="font-weight:900;padding-left:10px">
+            <!-- <mat-form-field appearance="fill"> -->
+                <hr>
+                <mat-select [(value)]="to">
+                    <mat-option value="Litres">Litres</mat-option>
+                    <mat-option value="Millilitres">Millilitres</mat-option>
+                    <mat-option value="Gallons">Gallons</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    
+      </div>
+
+
+
+
+
+      </div>

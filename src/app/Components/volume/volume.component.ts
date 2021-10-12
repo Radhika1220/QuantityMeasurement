@@ -2,19 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-temperature',
-  templateUrl: './temperature.component.html',
-  styleUrls: ['./temperature.component.scss']
+  selector: 'app-volume',
+  templateUrl: './volume.component.html',
+  styleUrls: ['./volume.component.scss']
 })
-export class TemperatureComponent implements OnInit {
+export class VolumeComponent implements OnInit {
 
   constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
-
-  from:string="Celsius";
-  to="Fahrenheit";
+  from:string="Litres";
+  to="Millilitres";
   expand:boolean=false;
   expand1:boolean=false;
   OnLength()
@@ -22,8 +21,8 @@ export class TemperatureComponent implements OnInit {
     this.route.navigateByUrl('/length')
   }
 
-  OnVolume()
-  {
-    this.route.navigateByUrl('/volume')
-  }
+  OnTemp()
+{
+  this.route.navigateByUrl('/temperature')
+}
 }

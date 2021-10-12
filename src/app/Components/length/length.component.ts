@@ -23,5 +23,8 @@ OnTemp()
 {
   this.route.navigateByUrl('/temperature')
 }
-
+OnVolume()
+{
+  this.route.navigateByUrl('/volume')
+}
 }

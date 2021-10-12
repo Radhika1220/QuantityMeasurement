@@ -10,13 +10,15 @@ import { TemperatureComponent } from './temperature/temperature.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { VolumeComponent } from './Components/volume/volume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     LengthComponent,
-    TemperatureComponent
+    TemperatureComponent,
+    VolumeComponent
   ],
   imports: [
     BrowserModule,
