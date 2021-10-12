@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-length',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LengthComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
@@ -15,4 +16,12 @@ export class LengthComponent implements OnInit {
   to="Centimeter";
   fromtext=1;
   state="length";
+  expand:boolean=false;
+  expand1:boolean=false;
+
+OnTemp()
+{
+  this.route.navigateByUrl('/temperature')
+}
+
 }

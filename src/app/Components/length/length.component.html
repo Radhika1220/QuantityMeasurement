@@ -6,8 +6,8 @@
     
     <div class="mainCard">
       <div class="cardDiv">
-      <mat-card class="example-card">
-        <mat-card-header>
+      <mat-card class="example-card" >
+        <mat-card-header >
           <img mat-card-image src="../../../assets/scale.png" alt="length" style="width: 12%;
           margin: 0px -1px; margin-left:8px">
         </mat-card-header>
@@ -18,27 +18,50 @@
     </div>
     
     <div class="cardDiv">
-        <mat-card class="example-card">
+        <mat-card class="example-card1" *ngIf="!expand"  (mouseover)="expand=true" style="color:#FD5160">
           <mat-card-header>
             <img mat-card-image src="../../../assets/hot.png" alt="length" style="width: 25%;
-          margin: 0px -1px; margin-left:10px">
+          margin: 0px -1px; margin-left:5px">
           </mat-card-header>
           <p class="temp">
      Temperature
           </p>
         </mat-card>
-      </div>
-      <div class="cardDiv">
-        <mat-card class="example-card">
-          <mat-card-header>
-            <img mat-card-image src="../../../assets/beaker.png" alt="length" style="width: 40%;
+
+        <mat-card class="example-card2" *ngIf="expand"  (mouseleave)="expand=false" style="color:white" (click)="OnTemp()">
+          <mat-card-header >
+            <img mat-card-image src="../../../assets/hot@2x.png" alt="length" style="width: 25%;
           margin: 0px -1px; margin-left:5px">
           </mat-card-header>
-          <p class="volume">
-           Volume
+          <p class="temp1">
+     Temperature
           </p>
         </mat-card>
-      </div>
+    </div>
+
+    <div class="cardDiv">
+      <mat-card class="example-card3" *ngIf="!expand1"  (mouseover)="expand1=true" style="color:#7224FF">
+        <mat-card-header>
+          <img mat-card-image src="../../../assets/be.jpeg" alt="length" style="width: 40%;
+        margin: 0px -1px; margin-left:3px">
+        </mat-card-header>
+        <p class="volume">
+   Volume
+        </p>
+      </mat-card>
+
+      <mat-card class="example-card4" *ngIf="expand1"  (mouseleave)="expand1=false" style="color:white">
+        <mat-card-header >
+          <img mat-card-image src="../../../assets/beaker.png" alt="length" style="width: 40%;
+        margin: 0px -1px; margin-left:3px">
+        </mat-card-header>
+        <p class="volume1">
+Volume
+        </p>
+      </mat-card>
+
+    </div>
+
     </div>
       <div class="main-convert">
         <div class="sub-convert">
